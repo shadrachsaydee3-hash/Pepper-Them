@@ -1,0 +1,99 @@
+[
+  {
+    "id": "prod-1",
+    "name": "Pepper Bold Hoodie",
+    "price": 75.00,
+    "category": "apparel",
+    "description": "Oversized, ultra-heavyweight 450GSM cotton fleece hoodie featuring a bold high-density screenprint in Hot Chili Red. Designed for ultimate street comfort and style.",
+    "images": [
+      "assets/img/prod_hoodie_1.png",
+      "assets/img/prod_hoodie_2.png"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "tags": ["New", "Premium"]
+  },
+  {
+    "id": "prod-2",
+    "name": "Grassfield Utility Cargo",
+    "price": 95.00,
+    "category": "apparel",
+    "description": "Multi-pocket tactical streetwear cargo pants with adjustable ankle straps and premium metal buckles. Heavyweight water-resistant canvas construction.",
+    "images": [
+      "assets/img/prod_cargo_1.png"
+    ],
+    "sizes": ["30", "32", "34", "36"],
+    "tags": ["Featured"]
+  },
+  {
+    "id": "prod-3",
+    "name": "Volt Logo Tee",
+    "price": 45.00,
+    "category": "apparel",
+    "description": "Premium 240GSM combed cotton graphic tee in black, featuring the signature Pepper Them branding printed in high-visibility neon lime green.",
+    "images": [
+      "assets/img/prod_tee_1.png"
+    ],
+    "sizes": ["M", "L", "XL", "XXL"],
+    "tags": ["Best Seller"]
+  },
+  {
+    "id": "prod-4",
+    "name": "Pepper Signature Cap",
+    "price": 30.00,
+    "category": "accessories",
+    "description": "Distressed heavy cotton twill dad cap with custom 3D embroidery on the front and custom clasp hardware in the back.",
+    "images": [
+      "assets/img/prod_cap_1.png"
+    ],
+    "sizes": ["One Size"],
+    "tags": []
+  },
+  {
+    "id": "prod-5",
+    "name": "Soundwave Ribbed Socks",
+    "price": 18.00,
+    "category": "accessories",
+    "description": "Thick, cushioned sports socks with soundwave graphic knit and high-contrast red-on-black color scheme.",
+    "images": [
+      "assets/img/prod_socks_1.png"
+    ],
+    "sizes": ["M", "L"],
+    "tags": []
+  },
+  {
+    "id": "prod-6",
+    "name": "Obsidian Leather Vest",
+    "price": 150.00,
+    "category": "apparel",
+    "description": "Premium textured synthetic leather tactical utility vest with adjustable shoulder harnesses and multiple zipper utility pockets.",
+    "images": [
+      "assets/img/prod_vest_1.png"
+    ],
+    "sizes": ["S/M", "L/XL"],
+    "tags": ["Limited"]
+  },
+  {
+    "id": "prod-7",
+    "name": "Knit Accent Beanie",
+    "price": 25.00,
+    "category": "accessories",
+    "description": "Super-soft double layer knit cuff beanie with neon tag labeling. Perfect for styling any urban outfit.",
+    "images": [
+      "assets/img/prod_beanie_1.png"
+    ],
+    "sizes": ["One Size"],
+    "tags": ["New"]
+  },
+  {
+    "id": "prod-8",
+    "name": "Grassfield Heavy Canvas Tote",
+    "price": 35.00,
+    "category": "accessories",
+    "description": "Thick 16oz organic cotton canvas shoulder tote with internal laptop pocket and bold screen-printed logo detailing.",
+    "images": [
+      "assets/img/prod_tote_1.png"
+    ],
+    "sizes": ["One Size"],
+    "tags": []
+  }
+]

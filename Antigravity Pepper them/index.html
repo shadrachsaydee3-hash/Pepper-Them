@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pepper Them | Streetwear & Independent Music Hub</title>
+  <meta name="description" content="Pepper Them fuses high-contrast streetwear culture with independent music rhythms. Explore premium garments and discover fresh independent sounds.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Swiper.js CSS for Hero Slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+</head>
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo" id="header-logo">
+        PEPPER<span>THEM</span><span class="logo-dot"></span>
+      </a>
+      <nav class="nav-menu" id="desktop-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="music.html" class="nav-link">Music</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Order</a>
+      </nav>
+      <div class="nav-right">
+        <button class="auth-nav-btn" id="auth-trigger-btn" title="Login / Sign Up">
+          <i class="fas fa-user-circle"></i>
+          <span class="auth-user-label" id="auth-user-label">Sign In</span>
+        </button>
+        <a href="contact.html" class="cart-trigger" id="cart-btn" title="View Order Form">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count" style="display: none;">0</span>
+        </a>
+        <button class="hamburger" id="menu-hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-Screen Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobile-nav-overlay">
+    <nav class="mobile-menu">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="shop.html" class="nav-link">Shop</a>
+      <a href="music.html" class="nav-link">Music</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Order</a>
+      <div class="mobile-auth-btns">
+        <button class="btn btn-primary" id="mobile-auth-trigger">Sign In / Register</button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Banner Slider -->
+  <section class="hero-slider swiper">
+    <div class="swiper-wrapper">
+      
+      <!-- Slide 1: Streetwear Showcase -->
+      <div class="swiper-slide hero-slide">
+        <div class="hero-bg" style="background-image: url('assets/img/prod_hoodie_1.png');"></div>
+        <div class="hero-overlay" style="background: linear-gradient(to right, rgba(8,8,8,0.92) 30%, rgba(8,8,8,0.3) 70%, rgba(8,8,8,0.85) 100%);"></div>
+        <div class="container">
+          <div class="hero-content">
+            <span class="hero-subtitle">NEW ARRIVALS DROP 01</span>
+            <h1 class="hero-title">SPICE UP <span>YOUR LOOK</span></h1>
+            <p class="hero-desc">Ultra-premium streetwear garments designed for comfort, durability, and raw expression. High-density graphic prints on 450GSM fabrics.</p>
+            <div class="hero-actions">
+              <a href="shop.html" class="btn btn-primary">Browse Shop <i class="fas fa-shopping-cart"></i></a>
+              <a href="music.html" class="btn btn-secondary">Discover Music <i class="fas fa-play"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slide 2: Multimedia Showcase -->
+      <div class="swiper-slide hero-slide">
+        <div class="hero-bg" style="background-image: url('assets/img/cover1.png');"></div>
+        <div class="hero-overlay" style="background: linear-gradient(to right, rgba(8,8,8,0.95) 30%, rgba(204,255,0,0.1) 75%, rgba(8,8,8,0.9) 100%);"></div>
+        <div class="container">
+          <div class="hero-content">
+            <span class="hero-subtitle">ARTIST MULTIMEDIA HUB</span>
+            <h1 class="hero-title">PEPPER <span>THE AUDIO</span></h1>
+            <p class="hero-desc">Discover the freshest independent tracks, custom instrumentals, and rhythmic grooves from Grassfield artists. Stream for free or request customization.</p>
+            <div class="hero-actions">
+              <a href="music.html" class="btn btn-volt">Enter Hub <i class="fas fa-music"></i></a>
+              <a href="contact.html" class="btn btn-secondary">Request Custom Mix <i class="fas fa-sliders-h"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Slide 3: Brand Culture -->
+      <div class="swiper-slide hero-slide">
+        <div class="hero-bg" style="background-image: url('assets/img/prod_cargo_1.png');"></div>
+        <div class="hero-overlay" style="background: linear-gradient(to right, rgba(8,8,8,0.95) 30%, rgba(255,51,51,0.1) 75%, rgba(8,8,8,0.9) 100%);"></div>
+        <div class="container">
+          <div class="hero-content">
+            <span class="hero-subtitle">THE COMMUNITY MOVEMENT</span>
+            <h1 class="hero-title">BORN IN <span>GRASSFIELD</span></h1>
+            <p class="hero-desc">Pepper Them isn't just clothing or sound—it's a shared state of mind. Built by independent creators to represent youth culture and energy.</p>
+            <div class="hero-actions">
+              <a href="shop.html" class="btn btn-primary">Shop Apparel <i class="fas fa-arrow-right"></i></a>
+              <a href="contact.html" class="btn btn-secondary">Contact Us <i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Slider Pagination and Navigation -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </section>
+
+  <!-- Infinite Marquee Section -->
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <span>★ PEPPER THEM COLLECTION DROPPING NOW</span>
+      <span>★ AFROBEATS • AMAPIANO • STREETWEAR</span>
+      <span>★ GRASSFIELD COMMUNITY EXPRESSION</span>
+      <span>★ SPICE UP YOUR STYLE</span>
+      <span>★ SHIPPED NATIONWIDE</span>
+      <span>★ PEPPER THEM COLLECTION DROPPING NOW</span>
+      <span>★ AFROBEATS • AMAPIANO • STREETWEAR</span>
+    </div>
+  </div>
+
+  <!-- Brand Features Section -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">THE <span>PEPPER</span> SYSTEM</h2>
+      </div>
+      <div class="feature-grid">
+        
+        <div class="feature-card reveal delay-100">
+          <div class="feature-icon"><i class="fas fa-tshirt"></i></div>
+          <h3>Premium Apparel</h3>
+          <p>Oversized fits, drop shoulders, and customized hardware. Every piece is constructed from custom-milled heavyweight combed cotton fabrics.</p>
+        </div>
+        
+        <div class="feature-card reveal delay-200">
+          <div class="feature-icon"><i class="fas fa-compact-disc"></i></div>
+          <h3>Independent Sound</h3>
+          <p>Stream directly from independent producers. Supporting local artists by providing a unified listening deck and customization options.</p>
+        </div>
+        
+        <div class="feature-card reveal delay-300">
+          <div class="feature-icon"><i class="fas fa-truck-monster"></i></div>
+          <h3>Efficient Logistics</h3>
+          <p>Optimized package sizes and express dispatch for local Grassfield pick-ups or nationwide shipping, keeping local deliveries low-cost.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="section" style="background-color: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
+    <div class="container">
+      <div class="reveal" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px;">
+        <h2 class="section-title" style="margin-bottom: 0;">HOTTEST <span>DROPS</span></h2>
+        <a href="shop.html" class="btn btn-secondary btn-small" style="padding: 10px 20px; font-size: 0.85rem;">View All Shop <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="product-grid" id="featured-product-grid" style="margin-top: 50px;">
+        <!-- Hydrated dynamically by gallery.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA section -->
+  <section class="section" style="background: linear-gradient(135deg, #121212 0%, #050505 100%); border-top: 1px solid var(--glass-border);">
+    <div class="container">
+      <div class="reveal" style="text-align: center; max-width: 700px; margin: 0 auto;">
+        <h2 class="section-title" style="justify-content: center; font-size: 2.8rem;">JOIN THE <span>CREW</span></h2>
+        <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 35px;">Subscribe to receive instant notifications on streetwear drops, secret pop-up locations, and new playlist submissions.</p>
+        <div style="display: flex; gap: 10px; max-width: 500px; margin: 0 auto; flex-wrap: wrap;">
+          <input type="email" placeholder="Enter your email" class="form-control" style="flex: 1; min-width: 250px; background: rgba(0,0,0,0.4); border-radius: 40px; padding: 14px 24px;">
+          <button class="btn btn-primary" style="border-radius: 40px; padding: 14px 30px;">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            PEPPER<span>THEM</span><span class="logo-dot"></span>
+          </a>
+          <p>Fusing raw streetwear aesthetics with independent musical expression. Born in Grassfield, designed for the world.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Apparel</a></li>
+            <li><a href="music.html">Artist Hub</a></li>
+            <li><a href="contact.html">Place Order</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Information</h4>
+          <ul class="footer-links">
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Shipping Details</a></li>
+            <li><a href="#">Grassfield Pickups</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pepper Them. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper.js for Slider logic -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <!-- GLightbox for Image Lightbox popups -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- Core Javascripts -->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/auth.js"></script>
+
+  <!-- Initialize Hero Slider -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const heroSwiper = new Swiper('.swiper', {
+        loop: true,
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true
+        },
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    });
+  </script>
+
+  <!-- AUTH MODAL -->
+  <div class="auth-modal-overlay" id="auth-modal-overlay" role="dialog" aria-modal="true">
+    <div class="auth-modal">
+      <button class="auth-modal-close" id="auth-modal-close" aria-label="Close"><i class="fas fa-times"></i></button>
+      <div class="auth-tabs">
+        <button class="auth-tab active" id="tab-login" data-tab="login">Sign In</button>
+        <button class="auth-tab" id="tab-register" data-tab="register">Register</button>
+      </div>
+      <div class="auth-form" id="form-login">
+        <div class="auth-logo">PEPPER<span>THEM</span></div>
+        <h2 class="auth-title">Welcome Back</h2>
+        <p class="auth-sub">Sign in to access your member benefits.</p>
+        <div class="auth-field"><label for="login-email">Email Address</label><input type="email" id="login-email" placeholder="your@email.com" autocomplete="email"></div>
+        <div class="auth-field"><label for="login-password">Password</label><input type="password" id="login-password" placeholder="••••••••" autocomplete="current-password"></div>
+        <div id="login-error" class="auth-error" style="display:none;"></div>
+        <button class="btn btn-primary auth-submit-btn" id="login-submit">Sign In <i class="fas fa-arrow-right"></i></button>
+        <p class="auth-switch">Don't have an account? <button class="auth-link" data-tab="register">Create one here</button></p>
+      </div>
+      <div class="auth-form" id="form-register" style="display:none;">
+        <div class="auth-logo">PEPPER<span>THEM</span></div>
+        <h2 class="auth-title">Join the Crew</h2>
+        <p class="auth-sub">Create a free account. Be first for every drop.</p>
+        <div class="auth-field"><label for="reg-name">Full Name</label><input type="text" id="reg-name" placeholder="Your Name" autocomplete="name"></div>
+        <div class="auth-field"><label for="reg-email">Email Address</label><input type="email" id="reg-email" placeholder="your@email.com" autocomplete="email"></div>
+        <div class="auth-field"><label for="reg-password">Password</label><input type="password" id="reg-password" placeholder="Min. 6 characters" autocomplete="new-password"></div>
+        <div id="register-error" class="auth-error" style="display:none;"></div>
+        <div id="register-success" class="auth-success" style="display:none;"></div>
+        <button class="btn btn-primary auth-submit-btn" id="register-submit">Create Account <i class="fas fa-user-plus"></i></button>
+        <p class="auth-switch">Already a member? <button class="auth-link" data-tab="login">Sign in here</button></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

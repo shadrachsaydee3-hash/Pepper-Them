@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Streetwear | Pepper Them</title>
+  <meta name="description" content="Browse the official Pepper Them apparel drops. Premium oversized hoodies, tactical cargo pants, logo tees, and distressed caps. Crafted for urban street culture.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+</head>
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo" id="header-logo">
+        PEPPER<span>THEM</span><span class="logo-dot"></span>
+      </a>
+      <nav class="nav-menu" id="desktop-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link active">Shop</a>
+        <a href="music.html" class="nav-link">Music</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Order</a>
+      </nav>
+      <div class="nav-right">
+        <button class="auth-nav-btn" id="auth-trigger-btn" title="Login / Sign Up">
+          <i class="fas fa-user-circle"></i>
+          <span class="auth-user-label" id="auth-user-label">Sign In</span>
+        </button>
+        <a href="contact.html" class="cart-trigger" id="cart-btn" title="View Order Form">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count" style="display: none;">0</span>
+        </a>
+        <button class="hamburger" id="menu-hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-Screen Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobile-nav-overlay">
+    <nav class="mobile-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="shop.html" class="nav-link active">Shop</a>
+      <a href="music.html" class="nav-link">Music</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Order</a>
+      <div class="mobile-auth-btns">
+        <button class="btn btn-primary" id="mobile-auth-trigger">Sign In / Register</button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Page Header -->
+  <section class="section" style="padding-top: 150px; padding-bottom: 40px; background: linear-gradient(180deg, #050505 0%, var(--bg-primary) 100%); border-bottom: 1px solid var(--glass-border);">
+    <div class="container">
+      <div class="reveal" style="max-width: 600px;">
+        <h1 class="section-title">THE <span>DROP</span></h1>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">Premium urban streetwear catalog. Click on garments to see high-res details. Click the shopping bag to collect items for your order form.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Grid & Filters Section -->
+  <section class="section">
+    <div class="container">
+      
+      <!-- Category Tabs -->
+      <div class="filter-container reveal delay-100">
+        <button class="filter-btn active" data-filter="all">All drops</button>
+        <button class="filter-btn" data-filter="apparel">Apparel</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+      </div>
+
+      <!-- Dynamic Product Grid -->
+      <div class="product-grid" id="shop-product-grid">
+        <!-- Rendered dynamically by gallery.js -->
+        <div style="grid-column: 1/-1; text-align: center; color: var(--text-secondary); padding: 40px;">
+          <i class="fas fa-spinner animate-spin" style="font-size: 2rem; color: var(--accent-red); margin-bottom: 15px;"></i>
+          <p>Loading catalog items...</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Global Lookbook & Partner Shop Link Block -->
+  <section class="section" style="border-top: 1px solid var(--glass-border); background: linear-gradient(180deg, var(--bg-primary) 0%, #0c0c0c 100%);">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="section-title">GLOBAL <span>TRENDS</span></h2>
+      </div>
+      
+      <!-- Lookbook Grid & CTA Block -->
+      <div class="lookbook-section" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; margin-top: 50px;">
+        
+        <!-- Lookbook Collage (Stylish Grid with lots of images) -->
+        <div class="lookbook-collage reveal delay-100" style="display: grid; grid-template-columns: repeat(6, 1fr); grid-auto-rows: 100px; gap: 15px; position: relative;">
+          
+          <!-- Image 1: Main generated high-fashion lookbook image (Large vertical span) -->
+          <div style="grid-column: span 3; grid-row: span 4;" class="lookbook-img-box">
+            <a href="assets/img/global_fashion_1.png" class="glightbox" data-gallery="lookbook" data-title="Silver Puffer Jacket Capsule" data-description="Futuristic metallic lookbook drop featuring oversized street styles.">
+              <img src="assets/img/global_fashion_1.png" alt="Futuristic puffer model" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth);" class="collage-img">
+              <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 15px; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); font-size: 0.8rem; font-family: var(--font-headings); letter-spacing: 1px; color: var(--accent-volt); text-transform: uppercase; z-index: 2;">
+                Style Lookbook 01
+              </div>
+            </a>
+          </div>
+
+          <!-- Image 2: Cargo detail preview -->
+          <div style="grid-column: span 3; grid-row: span 2;" class="lookbook-img-box">
+            <a href="assets/img/prod_cargo_1.png" class="glightbox" data-gallery="lookbook" data-title="Tactical Utility Cargo" data-description="Charcoal cargo pants with adjustable nylon buckles.">
+              <img src="assets/img/prod_cargo_1.png" alt="Cargo utility" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth);" class="collage-img">
+              <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 12px; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); font-size: 0.75rem; font-family: var(--font-headings); letter-spacing: 0.5px; color: var(--text-primary); text-transform: uppercase; z-index: 2;">
+                Tactical Detail
+              </div>
+            </a>
+          </div>
+
+          <!-- Image 3: Obsidian Hoodie preview -->
+          <div style="grid-column: span 3; grid-row: span 2;" class="lookbook-img-box">
+            <a href="assets/img/prod_hoodie_1.png" class="glightbox" data-gallery="lookbook" data-title="Obsidian Bold Hoodie" data-description="Ultra-heavyweight 450GSM cotton fleece hoodie details.">
+              <img src="assets/img/prod_hoodie_1.png" alt="Heavyweight Hoodie" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth);" class="collage-img">
+              <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 12px; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); font-size: 0.75rem; font-family: var(--font-headings); letter-spacing: 0.5px; color: var(--text-primary); text-transform: uppercase; z-index: 2;">
+                Fabric Structure
+              </div>
+            </a>
+          </div>
+
+          <!-- Image 4: Volt green detail graphics -->
+          <div style="grid-column: span 2; grid-row: span 2;" class="lookbook-img-box">
+            <a href="assets/img/prod_tee_1.png" class="glightbox" data-gallery="lookbook" data-title="Volt Typography Art" data-description="Close-up detail of high density print neon logos.">
+              <img src="assets/img/prod_tee_1.png" alt="Volt graphic tee" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth);" class="collage-img">
+            </a>
+          </div>
+
+          <!-- Image 5: Music cover art / Abstract graphics -->
+          <div style="grid-column: span 4; grid-row: span 2;" class="lookbook-img-box">
+            <a href="assets/img/cover1.png" class="glightbox" data-gallery="lookbook" data-title="Street Rhythms Album Art" data-description="Vibrant neon graphic design fusion inspired by Afropop culture.">
+              <img src="assets/img/cover1.png" alt="Neon graphics artwork" style="width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth);" class="collage-img">
+              <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 12px; background: linear-gradient(to top, rgba(0,0,0,0.8), transparent); font-size: 0.75rem; font-family: var(--font-headings); letter-spacing: 0.5px; color: var(--accent-red); text-transform: uppercase; font-weight: 700; z-index: 2;">
+                Abstract Energy
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Stylish CTA Partner Link Block -->
+        <div class="lookbook-info reveal delay-300" style="padding-left: 20px;">
+          <span style="font-family: var(--font-headings); font-size: 0.85rem; font-weight: 700; color: var(--accent-volt); letter-spacing: 2px; text-transform: uppercase;">Global Collaboration Drop</span>
+          <h3 style="font-family: var(--font-headings); font-size: 2.2rem; font-weight: 700; line-height: 1.1; margin: 15px 0 25px; text-transform: uppercase;">EXPLORE INTERNATIONAL <span>FASHION</span></h3>
+          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; font-size: 1.05rem;">We collaborate with independent design partners and high-end street agencies to bring the latest global fashion directly to the Grassfield community. Explore avant-garde utility drop trends, rare releases, and luxury streetwear items from our external catalog partners.</p>
+          <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 35px; font-size: 0.9rem; border-left: 2px solid var(--accent-red); padding-left: 15px;">Note: You will be redirected to Hypebeast, our global style lookbook and shop partner, where you can see the latest collections and high-end fashion reviews.</p>
+          
+          <a href="https://hypebeast.com" target="_blank" rel="noopener" class="btn btn-volt" style="display: inline-flex; align-items: center; gap: 12px; border-radius: 40px; padding: 16px 36px; box-shadow: 0 4px 20px rgba(204, 255, 0, 0.3);">
+            Browse Latest Fashion <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Size Chart Info Modal / Help Block -->
+  <section class="section" style="background-color: var(--bg-secondary); border-top: 1px solid var(--glass-border);">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <h2 class="section-title">SIZE <span>GUIDE</span></h2>
+          <p style="color: var(--text-secondary); margin-bottom: 30px; line-height: 1.6;">All hoodies and shirts are designed with a relaxed, slightly oversized streetwear drape. If you prefer a fitted look, we recommend sizing down.</p>
+          <div style="overflow-x: auto; background: var(--bg-primary); border: 1px solid var(--glass-border); border-radius: 6px; padding: 20px;">
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem;">
+              <thead>
+                <tr style="border-bottom: 2px solid var(--glass-border); font-family: var(--font-headings); text-transform: uppercase;">
+                  <th style="padding: 12px;">Size</th>
+                  <th style="padding: 12px;">Chest Width</th>
+                  <th style="padding: 12px;">Body Length</th>
+                  <th style="padding: 12px;">Sleeve Length</th>
+                </tr>
+              </thead>
+              <tbody style="color: var(--text-secondary);">
+                <tr style="border-bottom: 1px solid var(--glass-border);">
+                  <td style="padding: 12px; font-weight: 700; color: var(--text-primary);">S</td>
+                  <td style="padding: 12px;">54 cm</td>
+                  <td style="padding: 12px;">68 cm</td>
+                  <td style="padding: 12px;">60 cm</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--glass-border);">
+                  <td style="padding: 12px; font-weight: 700; color: var(--text-primary);">M</td>
+                  <td style="padding: 12px;">57 cm</td>
+                  <td style="padding: 12px;">70 cm</td>
+                  <td style="padding: 12px;">62 cm</td>
+                </tr>
+                <tr style="border-bottom: 1px solid var(--glass-border);">
+                  <td style="padding: 12px; font-weight: 700; color: var(--text-primary);">L</td>
+                  <td style="padding: 12px;">60 cm</td>
+                  <td style="padding: 12px;">72 cm</td>
+                  <td style="padding: 12px;">64 cm</td>
+                </tr>
+                <tr>
+                  <td style="padding: 12px; font-weight: 700; color: var(--text-primary);">XL</td>
+                  <td style="padding: 12px;">63 cm</td>
+                  <td style="padding: 12px;">74 cm</td>
+                  <td style="padding: 12px;">66 cm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="reveal delay-200">
+          <h2 class="section-title">LOCAL <span>PICKUP</span></h2>
+          <div style="background: linear-gradient(135deg, var(--bg-primary), var(--bg-tertiary)); border: 1px solid var(--glass-border); border-radius: 8px; padding: 30px;">
+            <h4 style="font-family: var(--font-headings); font-size: 1.1rem; color: var(--accent-volt); text-transform: uppercase; margin-bottom: 15px;">GRASSFIELD COMMUNITY PICKUP</h4>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">To bypass shipping rates, residents of Grassfield can select 'Grassfield Pickup' on the checkout page. Orders will be held for pickup at our central collection point.</p>
+            <a href="contact.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 10px 20px; display: inline-flex;">View Order Form</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            PEPPER<span>THEM</span><span class="logo-dot"></span>
+          </a>
+          <p>Fusing raw streetwear aesthetics with independent musical expression. Born in Grassfield, designed for the world.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Apparel</a></li>
+            <li><a href="music.html">Artist Hub</a></li>
+            <li><a href="contact.html">Place Order</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Information</h4>
+          <ul class="footer-links">
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Shipping Details</a></li>
+            <li><a href="#">Grassfield Pickups</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Connect</h4>
+          <div class="social-links">
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pepper Them. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLightbox for Image Lightbox popups -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- Core Javascripts -->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

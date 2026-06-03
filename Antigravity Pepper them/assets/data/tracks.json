@@ -1,0 +1,50 @@
+[
+  {
+    "artist": "DJ Pepper",
+    "trackTitle": "Hot Pepper Beat",
+    "cover": "assets/img/cover1.png",
+    "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    "genre": "Afrobeats",
+    "duration": "6:12"
+  },
+  {
+    "artist": "GVNG",
+    "trackTitle": "Street Symphony",
+    "cover": "assets/img/cover2.png",
+    "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+    "genre": "Amapiano",
+    "duration": "7:05"
+  },
+  {
+    "artist": "Neon Kid",
+    "trackTitle": "Grassfield Vibe",
+    "cover": "assets/img/cover3.png",
+    "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+    "genre": "Hip-Hop",
+    "duration": "5:44"
+  },
+  {
+    "artist": "Saint Soul",
+    "trackTitle": "Obsidian Rhythm",
+    "cover": "assets/img/cover4.png",
+    "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+    "genre": "Afro-Soul",
+    "duration": "5:02"
+  },
+  {
+    "artist": "Electric Star",
+    "trackTitle": "Volt Dance",
+    "cover": "assets/img/cover5.png",
+    "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
+    "genre": "Afropop",
+    "duration": "6:03"
+  },
+  {
+    "artist": "Chili Crew",
+    "trackTitle": "Pepper Them Anthem",
+    "cover": "assets/img/cover6.png",
+    "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3",
+    "genre": "Dancehall",
+    "duration": "5:38"
+  }
+]
